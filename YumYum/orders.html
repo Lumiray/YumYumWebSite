@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yum Yum</title>
+    <link rel="stylesheet" href="static/styles/style.css">
+</head>
+
+<body>
+    <nav>
+        <ul class="menu">
+            <li><a href="picture.html" target="_blank"><img src="static/images/logo.png" class="logo"></a>
+                <a href="index.html">Главная</a>
+            </li>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="new.html">Новинки</a></li>
+            <li><a href="about.html">О нас</a></li>
+            <li><a href="about.html#delivery">Доставка</a></li>
+            <li><a href="orders.html" class="active">Заказать</a></li>
+            <li class="social_icons"><a href="https://vk.com/" target="_blank"><img src="static/images/vkicon.png"></a>
+                <a href="https://telegram.org/" target="_blank"><img src="static/images/tgicon.png"></a>
+                <a href="new.html#pumpkin"><img src="static/images/pumpkinlogo.png"></a>
+                <a href="Document/Passport1/document.html" target="_blank"><img src="static/images/docpassport.png"></a>
+            </li>
+        </ul>
+    </nav>
+    <h1>Заказать мармеладный набор от <font color="#e85ea7" size=6>"Yum Yum"</font>
+    </h1>
+    <p>Это очень просто! Достаточно зарегистрироваться в форме ниже.</p>
+    <p>Скорее регистрируйтесь и заказывайте наш вкуснейший мармелад! </p>
+
+    <form action="https://www.google.com/" method="get" id="UserEnter" name="UserEnter" target="_blank">
+        <table>
+            <tr>
+                <td>Имя:</th>
+                <td><input type="text" id="Name" name="Name" required placeholder="Петр"></td>
+            </tr>
+
+            <tr>
+                <td>Фамилия:</th>
+                <td><input type="text" id="surname" name="surname" required placeholder="Петров"></td>
+            </tr>
+            <tr>
+                <td>Почта:</th>
+                <td><input type="email" id="email" name="email" required placeholder="@yandex.ru"></td>
+            </tr>
+            <tr>
+                <td>Возраст:</th>
+                <td><input type="number" id="age" name="age" min="1" max="100" required></td>
+            </tr>
+
+            <tr>
+                <td>Дата рождения:</th>
+                <td><input type="date" id="dob" name="dob" required></td>
+            </tr>
+            <tr>
+                <td>Пароль:</th>
+                <td><input type="password" id="password" name="password" required></td>
+            </tr>
+
+            <tr>
+                <td>Расскажите о любимом мармеладе:</th>
+                <td><textarea id="preferences" name="preferences"></textarea></td>
+            </tr>
+
+            <tr>
+                <td>Мармеладный набор мечты:</th>
+                <td><select id="marmaladeType" name="marmaladeType">
+                        <option value="berry">Ягодный мармелад</option>
+                        <option value="fruit">Фруктовый мармелад</option>
+                        <option value="exotic">Ммм экзотика</option>
+                </td>
+
+            </tr>
+            <tr>
+                <td>Доставка:</th>
+                <td><input type="radio" id="delivery" name="deliveryMethod" value="delivery" required> Доставка
+                    <input type="radio" id="pickup" name="deliveryMethod" value="pickup"> Заберу сам
+                </td>
+            </tr>
+            <tr>
+                <td>Подписаться на рассылку:</th>
+                <td><input type="checkbox" id="newsletter" name="newsletter" value="true"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="hidden" name="default_value" value="true"></td>
+            </tr>
+        </table>
+        <input type="reset" value="Очистить">
+        <input type="submit" value="Отправить">
+    </form>
+</body>
+
+</html>
